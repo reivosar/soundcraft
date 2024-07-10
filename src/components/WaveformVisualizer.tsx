@@ -41,7 +41,7 @@ const WaveformVisualizer: React.FC<WaveformVisualizerProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      width="860"
+      width="880"
       height="200"
       className=" bg-gray-800 rounded-lg"
     ></canvas>

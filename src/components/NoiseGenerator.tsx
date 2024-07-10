@@ -1,5 +1,4 @@
 import React from "react";
-import { Knob } from "./Knob";
 
 type NoiseSettings = {
   type: string;

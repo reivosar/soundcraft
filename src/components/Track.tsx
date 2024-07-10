@@ -139,7 +139,7 @@ const Track: React.FC = () => {
   }, [isLooping]);
 
   return (
-    <div className="track bg-gray-900 text-white p-4 rounded-lg shadow-md flex flex-col items-center w-full">
+    <div className="track bg-gray-900 text-white p-4 rounded-lg shadow-md flex flex-col items-center w-full max-w-screen-lg">
       <div className="mb-4 flex space-x-4">
         <button
           onClick={playNote}

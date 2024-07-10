@@ -3,7 +3,7 @@ import Track from "./Track";
 
 const TrackList: React.FC = () => {
   return (
-    <div className="space-y-6 mt-6 w-full max-w-4xl">
+    <div className="space-y-6 mt-6 w-full flex justify-center">
       <Track />
     </div>
   );
