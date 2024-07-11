@@ -17,7 +17,7 @@ type SynthSettings = {
   isActive: boolean;
 };
 
-const Track: React.FC = () => {
+const SynthScreen: React.FC = () => {
   const [oscillators, setOscillators] = useState<SynthSettings[]>([
     {
       oscillatorType: "sawtooth",
@@ -182,4 +182,4 @@ const Track: React.FC = () => {
   );
 };
 
-export default Track;
+export default SynthScreen;
