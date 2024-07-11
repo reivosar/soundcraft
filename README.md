@@ -28,6 +28,11 @@ Soundcraft is a web-based application that combines a synthesizer and drum machi
     ```bash
     npm run dev
     ```
+## Screens
+
+![スクリーンショット 2024-07-11 23 36 00](https://github.com/reivosar/soundcraft/assets/2153822/08801042-61b0-4f77-824c-e48e5d9edf8a)
+
+![スクリーンショット 2024-07-11 23 36 14](https://github.com/reivosar/soundcraft/assets/2153822/08e76cb3-a535-4f63-ae35-b616692fcc8e)
 
 ## Usage
 ### Synthesizer
