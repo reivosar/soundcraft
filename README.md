@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# Soundcraft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Soundcraft is a web-based application that combines a synthesizer and drum machine using React, TypeScript, and Tone.js. It aims to provide a seamless and interactive experience for music production. The project uses Vite for fast development and TailwindCSS for styling.
 
-Currently, two official plugins are available:
+## Features
+### Synthesizer
+- **Oscillators:** Three types with adjustable waveforms, filters, and envelopes.
+- **Noise Generator:** Generates white, pink, or brown noise with adjustable volume.
+- **Mixer:** Controls the volume of oscillators and noise generator.
+- **Waveform Visualizer:** Displays real-time waveforms of the generated sounds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Drum Machine
+- **Step Sequencer:** 4x8 grid for programming beats.
+- **Instruments:** Includes kick, snare, hi-hat, tom, clap, and cymbal.
 
-## Expanding the ESLint configuration
+## Installation
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/reivosar/soundcraft.git
+    cd soundcraft
+    ```
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+### Synthesizer
+1. **Play Note:** Press the "Play Note" button to generate sound from the synthesizer.
+2. **Loop:** Toggle the loop button to repeat the note.
+3. **Adjust Parameters:** Use the knobs to adjust oscillator types, filter frequencies, and envelope settings.
 
-- Configure the top-level `parserOptions` property like this:
+### Drum Machine
+1. **Step Sequencer:** Click on the grid to activate steps.
+2. **Play/Stop:** Use the play/stop button to control playback.
+3. **Clear:** Press the clear button to reset the sequencer.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Code Structure
+- **src/components/**
+  - **SynthesizerScreen.tsx:** Main synthesizer component.
+  - **DrumMachineScreen.tsx:** Main drum machine component.
+  - **OscillatorSection.tsx:** Controls for each oscillator.
+  - **NoiseGenerator.tsx:** Controls for the noise generator.
+  - **MixerSection.tsx:** Volume controls for oscillators and noise generator.
+  - **WaveformVisualizer.tsx:** Displays the waveform.
+  - **StepSequencer.tsx:** Step sequencer for the drum machine.
+  - **DrumPad.tsx:** Individual drum pad component.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Configuration
+- **tailwind.config.js:** TailwindCSS configuration.
+- **tsconfig.json:** TypeScript configuration.
+
+## Contributions
+Contributions are welcome. Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+For more details, visit the [Soundcraft GitHub repository](https://github.com/reivosar/soundcraft).
